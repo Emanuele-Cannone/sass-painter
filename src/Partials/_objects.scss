@@ -15,3 +15,7 @@
     align-items: $align;
     flex-direction: $direction;
 }
+
+@mixin bgc($col_black:black) {
+    background-color: $col_black;
+}

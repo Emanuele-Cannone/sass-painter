@@ -8,7 +8,8 @@
 }
 
 header{
-    height: $h_220;
+    height: $h_100;
+    @include bgc(black);// in questo modo posso cambiare colore di sfondo direttamente da qui
 }
 
 .header-top{
@@ -20,24 +21,55 @@ header{
     ul{
         height: 100%;
     }
-    height: $h_100;
+    height: $h_50;
     ul {
         @include flex(flex-end, center, row);
     }
     li{
-        padding: $pad_10;
+        padding: 0 $pad_30;
+        a{
+            color: $col_lightgrey;
+        }
+        a:hover{
+            color: $col_white;
+            text-decoration: underline;
+        }
+        i {
+        color: blue;
+        padding-right: 10px;
+        }
     }
+
 }
 
 .header-bottom{
     .container{
         @include container;
+        @include flex(flex-start, baseline, row);
     }
-    height: calc(#{$h_220} - #{$h_100});
+    img{
+        height: 25px;
+    }
+    height: $h_50;
+    .container,
+    nav,
+    ul{
+        height: 100%;
+    }
     ul {
-        @include flex;
+        @include flex(flex-start, center, row);
     }
     li{
-        padding: $pad_10;
+        padding: 15px $pad_40;// usa il calc
+        a{
+            color: $col_white;
+        }
+        &:hover{
+            @include bgc(lightgrey);
+            cursor: pointer;
+            a {
+                color: $col_black;
+            }
+        }
     }
 }

@@ -13,11 +13,12 @@ li a {
 }
 
 header {
-  height: 220px;
+  height: 100px;
+  background-color: black;
 }
 
 .header-top {
-  height: 100px;
+  height: 50px;
 }
 .header-top .container {
   width: 1200px;
@@ -35,22 +36,55 @@ header {
   flex-direction: row;
 }
 .header-top li {
-  padding: 10px;
+  padding: 0 30px;
+}
+.header-top li a {
+  color: lightgrey;
+}
+.header-top li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.header-top li i {
+  color: blue;
+  padding-right: 10px;
 }
 
 .header-bottom {
-  height: calc(220px - 100px);
+  height: 50px;
 }
 .header-bottom .container {
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-direction: row;
+}
+.header-bottom img {
+  height: 25px;
+}
+.header-bottom .container,
+.header-bottom nav,
+.header-bottom ul {
+  height: 100%;
 }
 .header-bottom ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
 .header-bottom li {
-  padding: 10px;
+  padding: 15px 40px;
+}
+.header-bottom li a {
+  color: white;
+}
+.header-bottom li:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+.header-bottom li:hover a {
+  color: black;
 }
