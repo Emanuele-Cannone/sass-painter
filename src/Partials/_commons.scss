@@ -1,0 +1,11 @@
+*{
+    @include general;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
