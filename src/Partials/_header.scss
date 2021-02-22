@@ -1,0 +1,61 @@
+.header-top{
+    .container{
+        @include container;
+    }
+    .container,
+    nav,
+    ul{
+        height: 100%;
+    }
+    height: $h_50;
+    ul {
+        @include flex(flex-end, center, row);
+    }
+    li{
+        padding: 0 $pad_30;
+        a{
+            color: $col_lightgrey;
+        }
+        a:hover{
+            color: $col_white;
+            text-decoration: underline;
+        }
+        i {
+        color: blue;
+        padding-right: 10px;
+        }
+    }
+
+}
+
+.header-bottom{
+    .container{
+        @include container;
+        @include flex(flex-start, baseline, row);
+    }
+    img{
+        height: 25px;
+    }
+    height: $h_50;
+    .container,
+    nav,
+    ul{
+        height: 100%;
+    }
+    ul {
+        @include flex(flex-start, center, row);
+    }
+    li{
+        padding: 15px $pad_40;// usa il calc
+        a{
+            color: $col_white;
+        }
+        &:hover{
+            @include bgc(lightgrey);
+            cursor: pointer;
+            a {
+                color: $col_black;
+            }
+        }
+    }
+}
