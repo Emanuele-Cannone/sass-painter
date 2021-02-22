@@ -6,6 +6,11 @@ li a {
   text-decoration: none;
 }
 
+header {
+  height: 100px;
+  background-color: black;
+}
+
 .header-top {
   height: 50px;
 }
@@ -78,13 +83,55 @@ li a {
   color: black;
 }
 
+.jumbotron {
+  height: 500px;
+  position: relative;
+}
+.jumbotron img {
+  height: 100%;
+}
+.jumbotron .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.jumbotron .description {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translateY(-50%);
+  width: 40%;
+}
+.jumbotron p {
+  color: #c70cb9;
+  font-style: italic;
+}
+.jumbotron p:first-child {
+  padding-top: 30px;
+  font-weight: bold;
+}
+.jumbotron h2 {
+  padding-bottom: 30px;
+}
+.jumbotron button {
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+}
+.jumbotron button.btn-black {
+  background-color: black;
+  color: white;
+}
+.jumbotron button.btn-transp {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-header {
-  height: 100px;
-  background-color: black;
 }

@@ -1,0 +1,51 @@
+.jumbotron{
+    height: 500px;
+    position: relative;
+    img{
+        height: 100%;
+    }
+    .container{
+        @include container;
+    }
+    .description{
+        position: absolute;
+        top: 50%;
+        left: 6%;
+        transform: translateY(-50%);
+        width: 40%;
+    }
+    p{
+        color: $col_pink;
+        font-style: italic;
+        &:first-child{
+            padding-top: $pad_30; 
+            font-weight: bold;
+        }
+    }
+    h2{
+        padding-bottom: $pad_30; 
+    }
+    button{
+        text-transform: uppercase;
+        padding: $pad_10;
+        margin-top: 20px;
+        margin-right: $pad_10;
+        border: none;
+        font-size: 20px;
+        &.btn-black{
+            @include bgc;
+            color: $col_white;
+        }
+        &.btn-transp{
+            @include bgc(transparent);
+            color: $col_black;
+            border: 1px solid black;
+        }
+    }
+
+}
+
+
+
+
+

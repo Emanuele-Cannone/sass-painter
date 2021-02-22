@@ -2,14 +2,12 @@
 @import "Partials/objects";
 @import "Partials/commons";
 @import "Partials/header";
+@import "Partials/jumbotron";
 
 
 *{
     @include general;
 }
 
-header{
-    height: $h_100;
-    @include bgc(black);// in questo modo posso cambiare colore di sfondo direttamente da qui
-}
+
 
