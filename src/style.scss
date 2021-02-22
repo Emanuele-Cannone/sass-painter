@@ -3,5 +3,41 @@
 @import "Partials/commons";
 
 
+*{
+    @include general;
+}
 
+header{
+    height: $h_220;
+}
 
+.header-top{
+    .container{
+        @include container;
+    }
+    .container,
+    nav,
+    ul{
+        height: 100%;
+    }
+    height: $h_100;
+    ul {
+        @include flex(flex-end, center, row);
+    }
+    li{
+        padding: $pad_10;
+    }
+}
+
+.header-bottom{
+    .container{
+        @include container;
+    }
+    height: calc(#{$h_220} - #{$h_100});
+    ul {
+        @include flex;
+    }
+    li{
+        padding: $pad_10;
+    }
+}
