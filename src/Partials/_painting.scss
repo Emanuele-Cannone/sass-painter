@@ -1,0 +1,17 @@
+.painting{
+    @include bgc(#e8e8e8);
+    .container{
+        @include container;
+        @include flex;
+    }
+    .box{
+        width: calc(100% / 3);
+        height: 200px;
+        @include flex(center, center, column)
+    }
+    @for $img from 1 to 4 {
+        .image#{$img}{
+            background-image: url('#{$pescione}');
+        }
+    }
+}

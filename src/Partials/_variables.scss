@@ -9,3 +9,15 @@ $h_300: 300px;
 $pad_10: 10px;
 $pad_30: 30px; 
 $pad_40: 40px;
+
+
+@for $indice from 1 to 11 {
+    .pad-#{$indice * 10}{
+        padding: #{$indice * 10}px;
+    }
+
+    .mar-#{$indice * 10}{
+        padding: #{$indice * 10}px;
+    }
+
+}

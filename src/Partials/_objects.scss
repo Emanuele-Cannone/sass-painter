@@ -19,3 +19,13 @@
 @mixin bgc($col_black:black) {
     background-color: $col_black;
 }
+
+
+@mixin pad-($direction: top, $n:1) {
+    padding-#{$direction}: $n * 10;
+}
+
+@mixin mar-($direction: top, $n:1) {
+    margin-#{$direction}: $n * 10;
+}
+
