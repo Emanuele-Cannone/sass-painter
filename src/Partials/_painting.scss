@@ -6,12 +6,15 @@
     }
     .box{
         width: calc(100% / 3);
-        height: 200px;
+        height: 400px;
         @include flex(center, center, column)
     }
     @for $img from 1 to 4 {
         .image#{$img}{
-            background-image: url('#{$pescione}');
+            background-image: url($immagine-#{$img});
+            background-size: cover;
+            width: 100%;
+            height: 100%;
         }
     }
 }
